@@ -1,3 +1,4 @@
+<ng-container>
 <nav
   class="navbar navbar-expand-lg fixed-top navbar-transparent"
   color-on-scroll="100"
@@ -218,7 +219,7 @@
         </ol>
     </div>
     </div>
-    <div class="section section-navbars">
+    <div  class="" >
       <img class="path" src="assets/img/path3.png" />
       <!-- Place the slick carousal code here -->
       <div class="row" style="margin-top: 2%; width: -webkit-fill-available;">
@@ -229,7 +230,7 @@
             </div>
           </div>
           <div style="padding: 4%;padding-top: 0%;width:-webkit-fill-available;">
-            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+            <ngx-slick-carousel class="carousel responsive" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
               <div ngxSlickItem class="slide" style="margin:1%;">
                 <mat-card class="example-card btn-primary">
                   <img mat-card-image src="assets/icons-images/abishek.jpg" width="10%" height="10%" alt="Photo of a Shiba Inu" style=" border-radius: 100%;
@@ -325,7 +326,6 @@
           </div>
         </div>
       </div>
-
     </div>
     <div class="section section-tabs">
       <!--  Place contact info here -->
@@ -555,3 +555,4 @@
     </div>
   </footer>
 </div>
+</ng-container>
