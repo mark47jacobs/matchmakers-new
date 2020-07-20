@@ -20,9 +20,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MatCardModule } from "@angular/material/card";
 
 import { ProfilepageComponent } from "./examples/profilepage/profilepage.component";
-import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { AboutUsComponent } from './examples/about-us/about-us.component';
 
 @NgModule({
   imports: [
@@ -47,13 +47,12 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
   ],
   declarations: [
     ProfilepageComponent,
-    RegisterpageComponent,
     LandingpageComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    AboutUsComponent
   ],
   exports: [
     ProfilepageComponent,
-    RegisterpageComponent,
     LandingpageComponent
   ],
   providers: []

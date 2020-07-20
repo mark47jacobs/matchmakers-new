@@ -113,7 +113,12 @@
           </div>
         </li> -->
         <li class="nav-item">
-          <a class="btn btn-primary btn-round mat-elevation-z5 btn-lg"
+          <a class="btn btn-neutral btn-round btn-lg" style="color:black!important"
+             [routerLink]="['/aboutus']"> About Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary btn-round btn-lg"
             href="javascript:void(0)"
             (click)="goToMatchmackersPage()"> Are You a Matchmaker?
           </a>
@@ -154,6 +159,63 @@
       <img class="path" src="assets/img/path4.png" />
       <img class="path path1" src="assets/img/path5.png" />
       <!-- Place the intro part here -->
+      <div class="row">
+        <div class="col-lg-6 col-lg-6 col-sm-12 col-xs-12">
+          <div style="margin: auto;margin:12%">
+            <div class="container">
+              <div class="row">
+                <h1 id="row-1-1" style="margin: auto;  padding: 2%;  width: -webkit-fill-available;">
+                  Your Personalised
+                  <br/>
+                  Matchmaking Assistants
+                </h1>
+              </div>
+              <div class="row">
+                <p id="row-2-2" style="margin: auto;text-align: justify;text-overflow: ellipsis;padding: 2%;">
+                  With more than 1000+ matchmakers across your city, you can choose someone near you who you can meet and 
+                  explain your requirements. These matchmakers will help you find the best match as per your requirements using 
+                  our extensive database.
+                </p>
+              </div>
+              <div class="row">
+                <button (click)="goToMatchmackersPage()" class="mat-elevation-z6 btn-primary" id="find">Find a Matchmaker near You</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-lg-6 col-sm-12 col-xs-12">
+          <img src="assets/icons-images/img2.png" style="height: 400px;width: 100%;">
+        </div>
+      </div>
+      <img class="path" src="assets/img/path4.png" />
+      <img class="path path1" src="assets/img/path5.png" />
+      <div class="row" style="margin-top: 2%; ">
+        <div class="col-lg-6 col-lg-6 col-sm-12 col-xs-12">
+          <div style="margin: auto;margin: 12%">
+            <div class="container">
+              <div class="row">
+                <h1 id="row-1-1" style="margin: auto;width: -webkit-fill-available;padding: 2%;">
+                  Get Personalized Involvement
+                </h1>
+              </div>
+              <div class="row">
+                <p id="row-2-2" style="
+                  margin: auto;text-align: justify;
+                  text-overflow: ellipsis;
+                  padding: 2%;">
+                  Your Matchmaker will sift through 1000s of profiles to carefully select someone relevant for you. Our Involvement helps you get the necessary guidance and support that is required during this important process of finalizing on a match. We accompany you during meetings and are involved in taking post-meeting feedback. This way we also are not only able to understand your requirements but also guide you through the process with our experience.  
+                </p>
+              </div>
+              <div class="row">
+                <button (click)="goToMatchmackersPage()" class="mat-elevation-z6 btn-primary" id="find">Find a Matchmaker near you</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-lg-6 col-sm-12 col-xs-12">
+          <img src="assets/icons-images/img1.jpg" style="width: 100%;">
+        </div>
+      </div>
     </div>
     <div class="section section-basic" id="basic-elements">
       <div class="container middle">
@@ -343,9 +405,9 @@
     </div>
     <div class="section section-javascript" id="javascriptComponents">
       
-    <div class="section section-nucleo-icons">
+    <!-- <div class="section section-nucleo-icons">
       
-    </div>
+    </div> -->
     <div class="section section-signup">
       <div class="container">
         <div class="squares square-1"></div>

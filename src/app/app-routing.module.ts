@@ -4,15 +4,15 @@ import { BrowserModule } from "@angular/platform-browser";
 import { Routes, RouterModule } from "@angular/router";
 
 import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
-import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
-import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import {LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
 import {LandingPageComponent} from "./pages/landing-page/landing-page.component";
+import { AboutUsComponent } from "./pages/examples/about-us/about-us.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: LandingPageComponent },
+  { path: "aboutus", component: AboutUsComponent },
   { path: "profile", component: ProfilepageComponent },
-  { path: "register", component: RegisterpageComponent },
   { path: "landing", component: LandingpageComponent }
 ];
 

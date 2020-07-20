@@ -311,6 +311,16 @@ $circlePaddingLarge: 9px;
     padding-left:30px;
     cursor: pointer;
   }
+  #find {
+    margin: auto;
+    width: -webkit-fill-available;
+    height: 45px;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    margin-top: 5%;
+    /*background-image: linear-gradient(to right top, #285fdd, #0073e9, #0085f2, #0097f9, #00a8ff)*/
+  }
 .button2{
     background-color:#c592c0;
     display:inline-block;
