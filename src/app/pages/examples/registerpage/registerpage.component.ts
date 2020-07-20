@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-registerpage",
@@ -9,7 +10,7 @@ export class RegisterpageComponent implements OnInit, OnDestroy {
   focus;
   focus1;
   focus2;
-  constructor() {}
+  constructor(public router : Router) {}
   @HostListener("document:mousemove", ["$event"])
   onMouseMove(e) {
     var squares1 = document.getElementById("square1");
@@ -79,6 +80,9 @@ export class RegisterpageComponent implements OnInit, OnDestroy {
     body.classList.add("register-page");
 
     this.onMouseMove(event);
+  }
+  goToClientsPage(){
+     this.router.navigate(["/home"])
   }
   ngOnDestroy() {
     var body = document.getElementsByTagName("body")[0];
