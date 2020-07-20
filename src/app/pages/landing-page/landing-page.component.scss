@@ -296,6 +296,7 @@ $circlePaddingLarge: 9px;
     color: #ffffff;
     font-style: continuous
   }
+
 #logo{
     outline:none;
     width:100px;border-color: #285fdd;
@@ -312,8 +313,8 @@ $circlePaddingLarge: 9px;
     box-sizing: border-box;
     text-decoration:none;
     font-family:'Poppins',sans-serif;
-    font-weight:400;
-    font-size:1.4em;
+    font-weight:300;
+    font-size:1.3em;
     color:#FFFFFF;
     text-align:center;
     transition: all 0.15s;
@@ -339,15 +340,36 @@ $circlePaddingLarge: 9px;
     }
   }
 @media all and (max-width:30em){
-     a.button2{
-        display:block;
-        margin : 0.4em auto;
-        font-size:0.3em;
+    .button2{
+        display:inline-block;
+        border-radius: 25px;
+        margin : 0.1em auto;
+        font-size:1em;
 }
-
+@media only screen and (max-width: 325px){
+    .heading{
+        font-size: 5vw;
+        font-family: 'Poppins';
+        margin-left: 14px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-weight: bold;
+        color: #ffffff;
+        font-style: continuous
+    }
+    #ambiguous{
+        display:none;
+    }
+    .button2{
+        display:inline-block;
+        border-radius: 25px;
+        margin : 0.1em auto;
+        font-size:0.9em;
+    }
+}
   @media only screen and (max-width: 480px){
     #heading {
-        font-size: 5vw;
+        font-size: 7vw;
         font-family: 'Poppins';
         margin-left: 20px;
         margin-top: auto;
@@ -358,7 +380,7 @@ $circlePaddingLarge: 9px;
     }
     #logo{
         outline:none;
-        width:75px;border-color: #285fdd;
+        width:83px;border-color: #285fdd;
         margin-top:auto;margin-bottom:auto;
         padding-left:30px;
         cursor: pointer;
@@ -366,7 +388,7 @@ $circlePaddingLarge: 9px;
   }
   @media only screen and (max-width: 768px){
     #heading {
-        font-size: 3vw;
+        font-size: 6vw;
         font-family: 'Poppins';
         margin-left: 20px;
         margin-top: auto;
